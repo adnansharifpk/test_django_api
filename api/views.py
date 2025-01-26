@@ -58,7 +58,7 @@ class ProductListView(APIView):
         sort_direction = request.GET.get('sort_direction', 'asc')  # Default sort direction is 'asc'
         
         # Validate the ordering field to ensure it's a valid field in the model
-        valid_order_fields = ['name', 'price', 'category', 'created_at']  # Add fields you want to allow for ordering
+        valid_order_fields = ['id', 'stock', 'name', 'description', 'price', 'selected']  # Add fields you want to allow for ordering
         if order_by not in valid_order_fields:
             raise ValidationError(f"Invalid order_by field. Valid fields are: {', '.join(valid_order_fields)}")
         
