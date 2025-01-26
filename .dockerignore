@@ -1,0 +1,7 @@
+# .dockerignore
+*.pyc
+__pycache__
+# For time being move local db.sqlite3
+#db.sqlite3
+*.git
+*.gitignore
