@@ -57,7 +57,7 @@ SIMPLE_JWT = {
 
 
 AUTHENTICATION_BACKENDS = [
-    'core.emailBackend.EmailBackend',  # Replace with the actual path
+    'core.emailAuthentication.EmailAuthentication',  # Replace with the actual path
     'django.contrib.auth.backends.ModelBackend',  # Default authentication backend
 ]
 

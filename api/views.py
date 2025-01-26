@@ -36,9 +36,9 @@ class LogoutView(APIView):
             return Response({"detail": "Refresh token is required for logout."}, status=400)
 
         try:
-            # Blacklist the refresh token
-            token = RefreshToken(refresh_token)
-            token.blacklist()
+            # Will implement in future Blacklist the refresh token
+            #token = RefreshToken(refresh_token)
+            #token.blacklist()
 
             return Response({"detail": "Logged out successfully."}, status=200)
 
